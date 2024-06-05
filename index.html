@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone App Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Is Your Favorite App "Political?"</h1>
+    </header>
+    <div class="iphone">
+        <div class="notch"></div>
+        <div class="top-bar">
+            <div class="time" id="time">12:00</div>
+            <div class="status-icons">
+                <img src="icons/signal.png" alt="Signal" class="icon">
+                <img src="icons/wifi.png" alt="WiFi" class="icon">
+                <img src="icons/battery.png" alt="Battery" class="icon">
+            </div>
+        </div>
+        <div class="screen">
+            <div class="app" onclick="openPopup('app1')">
+                <img src="icons/facebook.png" alt="Facebook">
+                <span>Facebook</span>
+            </div>
+            <div class="app" onclick="openPopup('app2')">
+                <img src="icons/twitter.png" alt="Twitter">
+                <span>Twitter</span>
+            </div>
+            <div class="app" onclick="openPopup('app3')">
+                <img src="icons/whatsapp.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </div>
+            <div class="app" onclick="openPopup('app4')">
+                <img src="icons/amazon.png" alt="Amazon">
+                <span>Amazon</span>
+            </div>
+            <div class="app" onclick="openPopup('app5')">
+                <img src="icons/uber.png" alt="Uber">
+                <span>Uber</span>
+            </div>
+            <div class="app" onclick="openPopup('app6')">
+                <img src="icons/netflix.png" alt="Netflix">
+                <span>Netflix</span>
+            </div>
+        </div>
+        <div class="power-button"></div>
+        <div class="volume-buttons">
+            <div class="volume-up"></div>
+            <div class="volume-down"></div>
+        </div>
+    </div>
+    <div class="description">
+        <p>This tool aims to inform users about the "political" implications of their favorite apps. By understanding the power dynamics and social impact embedded within these technologies, users can make more inclusive and informed decisions about their digital interactions. Empowering and supporting marginalized groups through conscientious use of these platforms can help foster a more inclusive and equitable digital environment, which can have a resounding impact in a non-digital one.</p>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popupText"></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
